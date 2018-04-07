@@ -7,6 +7,10 @@ redux-thunk-resource主要是用来减少模版代码，让redux写起来更方�
 1. 将action和reducer结合，写action时直接写reducer，省去了定义action_type的麻烦。
 2. 以资源概念为核心，默认为含有异步请求的资源添加isFetching和error状态。
 
+[![Build Status](https://travis-ci.org/wcxaa/redux-thunk-resource.svg?branch=master)](https://travis-ci.org/wcxaa/redux-thunk-resource)
+[![npm version](http://img.shields.io/npm/v/redux-thunk-resource.svg)](https://www.npmjs.com/package/redux-thunk-resource)
+[![npm downloads](http://img.shields.io/npm/dm/redux-thunk-resource.svg)](https://www.npmjs.com/package/redux-thunk-resource)
+
 ## Getting Started
 ### Installation
 ```bash

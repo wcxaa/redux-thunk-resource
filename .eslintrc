@@ -1,0 +1,14 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["airbnb-base", "prettier"],
+    "rules": {
+        "no-underscore-dangle": "off",
+        "global-require": "off",
+        "import/no-dynamic-require": "off",
+        "no-plusplus": "off"
+    },
+    "globals": {
+        "describe": true,
+        "it": true
+    }
+}

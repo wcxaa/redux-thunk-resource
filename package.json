@@ -1,6 +1,6 @@
 {
     "name": "redux-thunk-resource",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "a library used with redux-thunk to make redux easier",
     "main": "dist/index.js",
     "scripts": {

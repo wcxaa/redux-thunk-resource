@@ -101,7 +101,9 @@ fetchObj({
 	id:1
 });
 ```
-createRequest会为request做一层包装, 第一层参数user是fetchObj时传入的参数，第二层开始就是redux-thunk的写法，具体请查阅[此处](https://github.com/gaearon/redux-thunk#motivation)。注意：如上所示，无论用async或promise，返回必须是个promise。
+createRequest会为request做一层包装, 第一层参数user是fetchObj时传入的参数，第二层开始就是redux-thunk的写法，具体请查阅[此处](https://github.com/gaearon/redux-thunk#motivation)。注意：
+1. 如上所示，无论用async或promise，返回必须是个promise。
+2. createRequest中只能包装一个请求，如果包含2个或2个以上的请求，需要将资源进行拆分。比如排行榜中需要发2个请求，一个是全部的排行榜，一个是自己的排行，需要将资源拆分成all和mine，变成2个资源，每个资源内一次dispatch只发一个请求。
 
 当然也可以不用createRequest包装，此时写法就是redux-thunk的标准写法
 注意：如果Resource构建函数中传入hasAddOns: false，则使用createRequest包装会报错。

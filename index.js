@@ -50,7 +50,6 @@ export default class {
     createReducer = (initState = {}) => (state = { ...initState, ...this.initState }, action) => {
         const handler = this.actionMap[action.type];
         if (handler) {
-            ``;
             return {
                 ...state,
                 ...handler(...action.args)(state),

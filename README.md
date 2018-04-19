@@ -25,7 +25,7 @@ $ yarn add redux-actions
 ```js
 import Resource from 'redux-thunk-resource';
 
-const resource = new Resource();
+const resource = new Resource({ hasAddOns: true });
 
 const setObj = resource.createAction(obj => () => ({ ...obj }));
 

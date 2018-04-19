@@ -1,7 +1,7 @@
 import Resource from '../../index';
 import request from '../assets/request';
 
-const resource = new Resource({ hasAddOns: false });
+const resource = new Resource();
 
 const setObj = resource.createAction(obj => () => ({ ...obj }));
 

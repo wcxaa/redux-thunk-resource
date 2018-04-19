@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { assert } from 'chai';
 
-describe('with add-ons', () => {
+describe('with no add-ons', () => {
     it('normal async', done => {
         const filePath = './cases/case-1';
         const store = createStore(require(filePath).default, applyMiddleware(thunk));
@@ -106,7 +106,7 @@ describe('with add-ons', () => {
     });
 });
 
-describe('with no add-ons', () => {
+describe('with add-ons', () => {
     it('normal', done => {
         const filePath = './cases/case-3';
         const store = createStore(require(filePath).default, applyMiddleware(thunk));

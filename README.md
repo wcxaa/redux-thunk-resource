@@ -51,10 +51,10 @@ export default resource.createReducer();
 1. `config` (*Object*): 
 ```js
 {
-    hasAddOns: boolean // default: true
+    hasAddOns: boolean // default: false
 }
 ```
-新建resource时，可以传入配置项，hasAddOns默认为true，为资源添加isFetching、error状态，为false时不加这些状态。
+新建resource时，可以传入配置项，hasAddOns为true时，为资源添加isFetching、error状态。
 
 #### Resource Methods
 ##### createAction
